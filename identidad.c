@@ -3,7 +3,7 @@
 
 int main()
 {
-    int filas, columnas;
+    int filas, columnas, n;
 
     printf("Cuantas filas tendra la matriz: ");
     scanf("%d", &filas);
@@ -14,7 +14,8 @@ int main()
     {
         for (int j = 0; j < columnas; j++)
         {
-            printf("El digito %d%d", i+1, j+1);
+            printf("El digito %d%d", i+1, j+1, I[i][j]);
+            scanf("%d", &n);
            if(i==j)
            {
             I[i][j] = 1;
